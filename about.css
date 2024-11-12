@@ -1,0 +1,118 @@
+/* About Section Container */
+.about {
+  background-color: #f8f9fa;
+  position: relative;
+  overflow: hidden;
+  padding: 80px 0;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+/* About Content Container */
+.about-content {
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* Feature Cards */
+.feature-card {
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.03);
+  transition: transform 0.3s ease;
+  height: 100%;
+  border-left: 4px solid #ff7e5f;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.feature-card i {
+  color: #ff7e5f;
+  margin-right: 10px;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0;
+}
+
+/* Text Styles */
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Button Styles */
+.btn-primary {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  border: none;
+  padding: 10px 25px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255,126,95,0.3);
+  background: linear-gradient(to right, #feb47b, #ff7e5f);
+}
+
+.btn-outline-primary {
+  color: #ff7e5f;
+  border-color: #ff7e5f;
+  padding: 10px 25px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  border-color: transparent;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255,126,95,0.3);
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .about-content {
+      padding: 1.5rem;
+  }
+  
+  .section-title {
+      font-size: 2rem;
+  }
+  
+  .feature-card {
+      margin-bottom: 1rem;
+  }
+}

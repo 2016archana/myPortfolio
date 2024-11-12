@@ -1,236 +1,701 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="profile.css">
-  <link rel="stylesheet" href="nav.css">
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Archana Patel - Full Stack Developer & Competitive Programmer Portfolio">
+    <meta name="keywords" content="Archana Patel, Full Stack Developer, Competitive Programmer, Web Developer, Portfolio">
+    <meta name="author" content="Archana Patel">
+    <meta name="robots" content="index, follow">
+    <title>Archana Patel | Portfolio</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="profile.css">
 </head>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Archana Patel - Full Stack Developer & Competitive Programmer Portfolio">
+    <meta name="keywords" content="Archana Patel, Full Stack Developer, Competitive Programmer, Web Developer, Portfolio">
+    <meta name="author" content="Archana Patel">
+    <meta name="robots" content="index, follow">
+    <title>Archana Patel | Portfolio</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+
 <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <span class="logo-text">Archana</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home" aria-current="page">
+                            <i class="fas fa-home" aria-hidden="true"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                            <i class="fas fa-user" aria-hidden="true"></i> About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">
+                            <i class="fas fa-code" aria-hidden="true"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">
+                            <i class="fas fa-project-diagram" aria-hidden="true"></i> Projects
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#profiles">
+                            <i class="fas fa-trophy" aria-hidden="true"></i> Profiles
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            <i class="fas fa-envelope" aria-hidden="true"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+        <!-- Home Section -->
+        <section id="home" class="home text-center text-white py-5">
+          <div class="container">
+              <div class="row align-items-center min-vh-100">
+                  <!-- Left side content -->
+                  <div class="col-lg-6 text-lg-start">
+                      <h1 class="mb-3">Hi, I'm Archana Patel</h1>
+                      <div class="typing-container">
+                          <h2>I'm a <span class="typing-text"></span><span class="cursor"></span></h2>
+                      </div>
+                      <p class="lead mt-3">A passionate Full Stack Developer & Competitive Programmer</p>
+                      
+                      <!-- Action Buttons -->
+                      <div class="mt-4">
+                          <a href="https://drive.google.com/file/d/1r1FpKyOL96jEfCqcAkvJvAMW-JOvgkQY/view?usp=drive_link" 
+                             class="btn btn-light me-3" 
+                             target="_blank"
+                             rel="noopener noreferrer"
+                             aria-label="Download Resume">
+                              <i class="fas fa-download" aria-hidden="true"></i> Download Resume
+                          </a>
+                          <a href="#contact" 
+                             class="btn btn-outline-light"
+                             aria-label="Contact Me">
+                              <i class="fas fa-envelope" aria-hidden="true"></i> Contact Me
+                          </a>
+                      </div>
   
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#home">My Portfolio</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#profiles">Profiles</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-
-
-<section id="home" class="home text-center text-white py-5">
-  <div class="container">
-    <h1>Welcome to My Portfolio</h1>
-    <div class="typing-container">
-      <p>I'm Archana Patel, a passionate developer and problem solver.</p>
-    </div>
-    <!-- i have added sample resume and sample image for privacy -->
-    <a href="https://drive.google.com/file/d/1r1FpKyOL96jEfCqcAkvJvAMW-JOvgkQY/view?usp=drive_link" class="btn btn-light btn-lg" download>Download Resume</a>
-  </div>
-</section>
-
-
-
-  <section id="about" class="about py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <img src="images/photo.png" alt="Archana Patel" class="img-fluid rounded-circle">
-        </div>
-        <div class="col-md-8">
-          <h2>About Me</h2>
-          <p>Hi there! I’m Archana Patel, a final-year student at IET Lucknow, pursuing a Bachelor’s degree in Electronics and Communication Engineering. Over the years, I have cultivated a deep passion for technology and problem-solving.My academic journey has equipped me with a solid foundation in Computer Science Fundamentals and Data Structures & Algorithms (DSA), which I continuously apply to tackle complex challenges and excel in competitive programming.I am also a proficient Web Developer, adept in creating dynamic and visually appealing websites using modern technologies. My expertise extends to HTML, CSS, JavaScript, and frameworks like Bootstrap, enabling me to build responsive and user-friendly web applications.I love solving problems and exploring new tech stacks. Whether it’s diving into the latest programming languages or experimenting with emerging technologies, I’m always eager to learn and grow.Feel free to explore my portfolio to see some of the exciting projects I’ve worked on, and don’t hesitate to reach out if you’d like to connect or collaborate!
-
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section id="skills" class="skills py-5">
-    <div class="container">
-        <h2 class="text-center mb-5">My Skills</h2>
-        <div class="row">
-            <div class="col-md-4 d-flex align-items-stretch mb-4">
-                <div class="card w-100">
-                    <div class="card-body">
-                        <h3 class="card-title"><i class="bi bi-code"></i> Programming Languages</h3>
-                        <ul>
-                            <li><strong>C++</strong> - Advanced proficiency in object-oriented programming, algorithm development, and competitive programming.</li>
-                            <li><strong>Python</strong> - Proficient in scripting, data analysis, web development, and solving algorithmic challenges.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 d-flex align-items-stretch mb-4">
-                <div class="card w-100">
-                    <div class="card-body">
-                        <h3 class="card-title"><i class="bi bi-globe"></i> Web Development</h3>
-                        <ul>
-                            <li><strong>HTML & CSS</strong> - Skilled in building and styling responsive and accessible web pages.</li>
-                            <li><strong>JavaScript</strong> - Experienced in creating interactive web applications and enhancing user experiences.</li>
-                            <li><strong>Bootstrap</strong> - Knowledgeable in designing responsive layouts and improving UI/UX.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 d-flex align-items-stretch mb-4">
-                <div class="card w-100">
-                    <div class="card-body">
-                        <h3 class="card-title"><i class="bi bi-lightbulb"></i> Problem Solving & Fundamentals</h3>
-                        <ul>
-                            <li><strong>Data Structures & Algorithms</strong> - Proficient in solving problems and implementing data structures and algorithms for efficient solutions.</li>
-                            <li><strong>Competitive Programming</strong> - Active participant in competitive programming contests, with strong problem-solving skills.</li>
-                            <li><strong>Computer Science Fundamentals</strong> - Solid understanding of core CS principles and concepts.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-<section id="projects" class="projects py-5">
-  <div class="container">
-      <h2 class="text-center mb-5">Projects</h2>
-      <div class="row">
-          <div class="col-md-4 mb-4 d-flex align-items-stretch">
-              <div class="card w-100">
-                  <img src="images/games.png" class="card-img-top" alt="Project 1">
-                  <div class="card-body">
-                      <h3 class="card-title">Tic-Tac-Toe Game</h3>
-                      <p class="card-text">This classic Tic-Tac-Toe game, developed using HTML, CSS, Bootstrap, and JavaScript, offers a refreshing take on the timeless game of Xs and Os.The game is designed to provide a fun and engaging experience while offering customization options and a responsive interface.</p>
-                      <a href="https://2016archana.github.io/Tic-Tac-Toe-Game/" class="btn btn-primary">View Project</a>
+                      <!-- Social Links -->
+                      <div class="social-links mt-4">
+                          <a href="your-github" 
+                             target="_blank" 
+                             rel="noopener noreferrer"
+                             class="text-white me-3"
+                             aria-label="GitHub Profile">
+                              <i class="fab fa-github fa-lg" aria-hidden="true"></i>
+                          </a>
+                          <a href="your-linkedin" 
+                             target="_blank" 
+                             rel="noopener noreferrer"
+                             class="text-white me-3"
+                             aria-label="LinkedIn Profile">
+                              <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+                          </a>
+                          <a href="your-leetcode" 
+                             target="_blank" 
+                             rel="noopener noreferrer"
+                             class="text-white"
+                             aria-label="LeetCode Profile">
+                              <i class="fas fa-code fa-lg" aria-hidden="true"></i>
+                          </a>
+                      </div>
+                  </div>
+                  
+                  <!-- Right side image -->
+                  <div class="col-lg-6 mt-5 mt-lg-0">
+                      <img src="images/photo.png" 
+                           alt="Archana Patel" 
+                           class="img-fluid rounded-circle profile-image"
+                           loading="lazy">
                   </div>
               </div>
           </div>
-          <div class="col-md-4 mb-4 d-flex align-items-stretch">
-              <div class="card w-100">
-                  <img src="images/portfolio.png" class="card-img-top" alt="Project 2">
-                  <div class="card-body">
-                      <h3 class="card-title">Portfolio Website</h3>
-                      <p class="card-text">This dynamic portfolio website showcases a curated selection of my work, skills, and achievements as a software developer. Built using HTML, CSS, and JavaScript, with the added flair of Bootstrap for enhanced design and functionality, this website offers an engaging and interactive experience for visitors.</p>
-                      <a href="https://2016archana.github.io/myPortfolio/" class="btn btn-primary">View Project</a>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-4 mb-4 d-flex align-items-stretch">
-            <div class="card w-100">
-                <img src="" class="card-img-top" alt="Project 3">
-                <div class="card-body">
-                    <h3 class="card-title">Weather App</h3>
-                    <p class="card-text">The Weather App is an intuitive and modern web application designed to provide accurate and real-time weather information. Developed using HTML, CSS, JavaScript, and React.js, this app integrates weather APIs to deliver current conditions, forecasts, and other essential weather details in a sleek and responsive interface.</p>
-                    <a href="link-to-project2" class="btn btn-primary">View Project</a>
+      </section>
+
+
+       <!-- About Section -->
+       <section id="about" class="about py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">About Me</h2>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about-content">
+                        <h3 class="mb-4">Hi there! 👋</h3>
+                        <p class="lead mb-4">I'm Archana Patel, a final-year student at IET Lucknow, pursuing a Bachelor's degree in Electronics and Communication Engineering.</p>
+                        
+                        <div class="about-details">
+                            <div class="row">
+                                <!-- Development Card -->
+                                <div class="col-md-6 mb-3">
+                                    <div class="feature-card">
+                                        <h4>
+                                            <i class="fas fa-code" aria-hidden="true"></i> Development
+                                        </h4>
+                                        <p>Proficient Web Developer with expertise in HTML, CSS, JavaScript, and Bootstrap. Creating responsive and user-friendly web applications.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Problem Solving Card -->
+                                <div class="col-md-6 mb-3">
+                                    <div class="feature-card">
+                                        <h4>
+                                            <i class="fas fa-laptop-code" aria-hidden="true"></i> Problem Solving
+                                        </h4>
+                                        <p>Strong foundation in DSA and competitive programming. Regular participant in coding contests and algorithmic challenges.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Technologies Card -->
+                                <div class="col-md-6 mb-3">
+                                    <div class="feature-card">
+                                        <h4>
+                                            <i class="fas fa-database" aria-hidden="true"></i> Technologies
+                                        </h4>
+                                        <p>Experience with various technologies and frameworks. Always eager to learn and adapt to new tech stacks.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Collaboration Card -->
+                                <div class="col-md-6 mb-3">
+                                    <div class="feature-card">
+                                        <h4>
+                                            <i class="fas fa-users" aria-hidden="true"></i> Collaboration
+                                        </h4>
+                                        <p>Strong team player with excellent communication skills. Experience in collaborative development and version control.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="mt-4 text-center">
+                            <a href="#contact" class="btn btn-primary me-3" aria-label="Contact Me">
+                                <i class="fas fa-envelope" aria-hidden="true"></i> Contact Me
+                            </a>
+                            <a href="#projects" class="btn btn-outline-primary" aria-label="View Projects">
+                                <i class="fas fa-project-diagram" aria-hidden="true"></i> View Projects
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>   
+
+
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills py-5">
+          <!-- SVG Background Animation -->
+          <div class="skills-bg">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="svg-bg" aria-hidden="true">
+                  <path fill="#FF7E5F" d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-45.8C87.4,-32.5,90,-16.3,88.5,-1.5C87,13.3,81.4,26.7,73.6,38.4C65.8,50.1,55.7,60.2,43.2,67.2C30.7,74.2,15.3,78,-0.4,78.7C-16.2,79.3,-32.4,76.7,-46.7,69.7C-61,62.7,-73.4,51.2,-81.2,37C-89,22.7,-92.2,5.7,-87.8,-8.4C-83.3,-22.5,-71.2,-33.7,-59.4,-42.3C-47.6,-50.9,-36.2,-56.9,-25,-63.4C-13.8,-69.9,-2.7,-76.9,8.9,-77.8C20.5,-78.7,30.6,-83.6,44.7,-76.4Z" transform="translate(100 100)" />
+              </svg>
+          </div>
+  
+          <div class="container position-relative">
+              <h2 class="section-title text-center mb-5">Technical Skills</h2>
+              
+              <!-- Programming Languages -->
+              <div class="skill-category mb-5">
+                  <h3 class="category-title">
+                      <i class="fas fa-code" aria-hidden="true"></i> Programming Languages
+                  </h3>
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="skill-item">
+                              <div class="skill-info">
+                                  <span>C++</span>
+                                  <span>90%</span>
+                              </div>
+                              <div class="progress">
+                                  <div class="progress-bar" 
+                                       role="progressbar" 
+                                       style="width: 90%" 
+                                       aria-valuenow="90" 
+                                       aria-valuemin="0" 
+                                       aria-valuemax="100"
+                                       aria-label="C++ Skill Level">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="skill-item">
+                              <div class="skill-info">
+                                  <span>Python</span>
+                                  <span>85%</span>
+                              </div>
+                              <div class="progress">
+                                  <div class="progress-bar" 
+                                       role="progressbar" 
+                                       style="width: 85%" 
+                                       aria-valuenow="85" 
+                                       aria-valuemin="0" 
+                                       aria-valuemax="100"
+                                       aria-label="Python Skill Level">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Web Technologies -->
+              <div class="skill-category mb-5">
+                  <h3 class="category-title">
+                      <i class="fas fa-globe" aria-hidden="true"></i> Web Technologies
+                  </h3>
+                  <div class="row">
+                      <div class="col-lg-3 col-md-6">
+                          <div class="skill-box">
+                              <div class="skill-icon">
+                                  <i class="fab fa-html5" aria-hidden="true"></i>
+                              </div>
+                              <h4>HTML5</h4>
+                              <div class="skill-level">Advanced</div>
+                          </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                          <div class="skill-box">
+                              <div class="skill-icon">
+                                  <i class="fab fa-css3-alt" aria-hidden="true"></i>
+                              </div>
+                              <h4>CSS3</h4>
+                              <div class="skill-level">Advanced</div>
+                          </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                          <div class="skill-box">
+                              <div class="skill-icon">
+                                  <i class="fab fa-js" aria-hidden="true"></i>
+                              </div>
+                              <h4>JavaScript</h4>
+                              <div class="skill-level">Intermediate</div>
+                          </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                          <div class="skill-box">
+                              <div class="skill-icon">
+                                  <i class="fab fa-bootstrap" aria-hidden="true"></i>
+                              </div>
+                              <h4>Bootstrap</h4>
+                              <div class="skill-level">Advanced</div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Tools & Technologies -->
+              <div class="skill-category">
+                  <h3 class="category-title">
+                      <i class="fas fa-tools" aria-hidden="true"></i> Tools & Technologies
+                  </h3>
+                  <div class="row">
+                      <div class="col-md-4">
+                          <div class="tool-card">
+                              <i class="fab fa-git-alt" aria-hidden="true"></i>
+                              <h4>Git & GitHub</h4>
+                              <p>Version control and collaboration</p>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="tool-card">
+                              <i class="fas fa-database" aria-hidden="true"></i>
+                              <h4>MySQL</h4>
+                              <p>Database management and queries</p>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="tool-card">
+                              <i class="fas fa-terminal" aria-hidden="true"></i>
+                              <h4>Command Line</h4>
+                              <p>Shell scripting and automation</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+
+          <!-- Projects Section -->
+    <section id="projects" class="projects py-5">
+      <div class="container">
+          <h2 class="section-title text-center mb-5">My Projects</h2>
+          <div class="row">
+              <!-- Tic-Tac-Toe Project -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="project-card">
+                      <div class="project-image">
+                          <img src="images/games.png" 
+                               alt="Tic-Tac-Toe Game Preview" 
+                               loading="lazy">
+                          <div class="project-overlay">
+                              <div class="project-tech">
+                                  <span>HTML</span>
+                                  <span>CSS</span>
+                                  <span>JavaScript</span>
+                                  <span>Bootstrap</span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="project-content">
+                          <h3>Tic-Tac-Toe Game</h3>
+                          <p>A classic game built with modern web technologies, featuring a responsive design and interactive gameplay experience.</p>
+                          <div class="project-links">
+                              <a href="https://2016archana.github.io/Tic-Tac-Toe-Game/" 
+                                 class="btn btn-primary" 
+                                 target="_blank" 
+                                 rel="noopener noreferrer"
+                                 aria-label="View Tic-Tac-Toe Game Demo">
+                                  <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo
+                              </a>
+                              <a href="your-github-repo" 
+                                 class="btn btn-outline-primary" 
+                                 target="_blank" 
+                                 rel="noopener noreferrer"
+                                 aria-label="View Tic-Tac-Toe Game Code">
+                                  <i class="fab fa-github" aria-hidden="true"></i> Code
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Portfolio Website Project -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="project-card">
+                      <div class="project-image">
+                          <img src="images/portfolio.png" 
+                               alt="Portfolio Website Preview" 
+                               loading="lazy">
+                          <div class="project-overlay">
+                              <div class="project-tech">
+                                  <span>HTML</span>
+                                  <span>CSS</span>
+                                  <span>JavaScript</span>
+                                  <span>Bootstrap</span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="project-content">
+                          <h3>Portfolio Website</h3>
+                          <p>A responsive portfolio website showcasing my skills, projects, and achievements using modern web technologies.</p>
+                          <div class="project-links">
+                              <a href="https://2016archana.github.io/myPortfolio/" 
+                                 class="btn btn-primary" 
+                                 target="_blank" 
+                                 rel="noopener noreferrer"
+                                 aria-label="View Portfolio Demo">
+                                  <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo
+                              </a>
+                              <a href="your-github-repo" 
+                                 class="btn btn-outline-primary" 
+                                 target="_blank" 
+                                 rel="noopener noreferrer"
+                                 aria-label="View Portfolio Code">
+                                  <i class="fab fa-github" aria-hidden="true"></i> Code
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Weather App Project -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="project-card">
+                      <div class="project-image">
+                          <img src="images/weather_p1.png" 
+                               alt="Weather App Preview" 
+                               loading="lazy">
+                          <div class="project-overlay">
+                              <div class="project-tech">
+                                  <span>React</span>
+                                  <span>API</span>
+                                  <span>CSS</span>
+                                  <span>JavaScript</span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="project-content">
+                          <h3>Weather App</h3>
+                          <p>A modern weather application built with React.js, featuring real-time weather updates and forecasts.</p>
+                          <div class="project-links">
+                              <a href="your-weather-app-link" 
+                                 class="btn btn-primary" 
+                                 target="_blank" 
+                                 rel="noopener noreferrer"
+                                 aria-label="View Weather App Demo">
+                                  <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo
+                              </a>
+                              <a href="your-github-repo" 
+                                 class="btn btn-outline-primary" 
+                                 target="_blank" 
+                                 rel="noopener noreferrer"
+                                 aria-label="View Weather App Code">
+                                  <i class="fab fa-github" aria-hidden="true"></i> Code
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
-  </div>
-</section>
-
-
-
-  <section id="profiles" class="profiles py-5">
-    <div class="container">
-      <h2 class="text-center mb-5">Competitive Programming Profiles</h2>
-      <div class="row">
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card text-center shadow-sm">
-            <div class="icon mx-auto mt-4">
-              <img src="images/leetcode.png" alt="LeetCode Icon" class="img-fluid">
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">LeetCode</h3>
-              <a href="https://leetcode.com/u/archana2016/" class="btn btn-primary">View Profile</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card text-center shadow-sm">
-            <div class="icon mx-auto mt-4">
-              <img src="images/codeforces.png" alt="Codeforces Icon" class="img-fluid">
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">Codeforces</h3>
-              <a href="https://codeforces.com/profile/archana_2710" class="btn btn-primary">View Profile</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card text-center shadow-sm">
-            <div class="icon mx-auto mt-4">
-              <img src="images/codechef.png" alt="CodeChef Icon" class="img-fluid">
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">CodeChef</h3>
-              <a href="https://www.codechef.com/users/archana2016" class="btn btn-primary">View Profile</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card text-center shadow-sm">
-            <div class="icon mx-auto mt-4">
-              <img src="images/gfg.png" alt="GeeksforGeeks Icon" class="img-fluid">
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">GeeksforGeeks</h3>
-              <a href="https://www.geeksforgeeks.org/user/archana_2710/" class="btn btn-primary">View Profile</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </section>
 
 
-  <section id="contact" class="contact py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Contact Me</h2>
-      <form id="contactForm">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" class="form-control" required>
+      <!-- Profiles Section -->
+      <section id="profiles" class="profiles py-5">
+        <!-- Decorative Elements -->
+        <div class="glow-orb glow-orb-1" aria-hidden="true"></div>
+        <div class="glow-orb glow-orb-2" aria-hidden="true"></div>
+        
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Coding Profiles</h2>
+            <div class="row">
+                <!-- LeetCode Profile -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="profile-card">
+                        <div class="profile-icon">
+                            <img src="images/leetcode.png" 
+                                 alt="LeetCode Logo" 
+                                 class="platform-icon"
+                                 loading="lazy">
+                        </div>
+                        <div class="profile-details">
+                            <h3>LeetCode</h3>
+                            <div class="profile-stats">
+                                <div class="stat">
+                                    <span class="stat-value">200+</span>
+                                    <span class="stat-label">Problems</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">50+</span>
+                                    <span class="stat-label">Contests</span>
+                                </div>
+                            </div>
+                            <a href="your-leetcode-profile" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="profile-link"
+                               aria-label="View LeetCode Profile">
+                                <i class="fas fa-external-link-alt" aria-hidden="true"></i> View Profile
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CodeForces Profile -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="profile-card">
+                        <div class="profile-icon">
+                            <img src="images/codeforces.png" 
+                                 alt="CodeForces Logo" 
+                                 class="platform-icon"
+                                 loading="lazy">
+                        </div>
+                        <div class="profile-details">
+                            <h3>CodeForces</h3>
+                            <div class="profile-stats">
+                                <div class="stat">
+                                    <span class="stat-value">100+</span>
+                                    <span class="stat-label">Problems</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">30+</span>
+                                    <span class="stat-label">Contests</span>
+                                </div>
+                            </div>
+                            <a href="your-codeforces-profile" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="profile-link"
+                               aria-label="View CodeForces Profile">
+                                <i class="fas fa-external-link-alt" aria-hidden="true"></i> View Profile
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GeeksforGeeks Profile -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="profile-card">
+                        <div class="profile-icon">
+                            <img src="images/gfg.png" 
+                                 alt="GeeksforGeeks Logo" 
+                                 class="platform-icon"
+                                 loading="lazy">
+                        </div>
+                        <div class="profile-details">
+                            <h3>GeeksforGeeks</h3>
+                            <div class="profile-stats">
+                                <div class="stat">
+                                    <span class="stat-value">300+</span>
+                                    <span class="stat-label">Problems</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">4⭐</span>
+                                    <span class="stat-label">Rating</span>
+                                </div>
+                            </div>
+                            <a href="your-gfg-profile" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="profile-link"
+                               aria-label="View GeeksforGeeks Profile">
+                                <i class="fas fa-external-link-alt" aria-hidden="true"></i> View Profile
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CodeChef Profile -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="profile-card">
+                        <div class="profile-icon">
+                            <img src="images/codechef.png" 
+                                 alt="CodeChef Logo" 
+                                 class="platform-icon"
+                                 loading="lazy">
+                        </div>
+                        <div class="profile-details">
+                            <h3>CodeChef</h3>
+                            <div class="profile-stats">
+                                <div class="stat">
+                                    <span class="stat-value">150+</span>
+                                    <span class="stat-label">Problems</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">3⭐</span>
+                                    <span class="stat-label">Rating</span>
+                                </div>
+                            </div>
+                            <a href="your-codechef-profile" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="profile-link"
+                               aria-label="View CodeChef Profile">
+                                <i class="fas fa-external-link-alt" aria-hidden="true"></i> View Profile
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" class="form-control" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" class="form-control" rows="4" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Send Message</button>
-      </form>
-    </div>
-  </section>
+    </section>
 
 
-  <footer class="footer bg-dark text-white py-3">
-    <div class="container text-center">
-      <p>&copy; 2024 My Portfolio. All rights reserved.</p>
-    </div>
-  </footer>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="script.js"></script>
-</body>
-</html>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact py-5">
+          <div class="container">
+              <h2 class="section-title text-center mb-5">Get In Touch</h2>
+              <div class="row justify-content-center">
+                  <div class="col-lg-8">
+                      <div class="contact-form-container">
+                          <form id="contactForm" class="contact-form" method="POST" action="#" novalidate>
+                              <div class="form-group">
+                                  <label for="name">
+                                      <i class="fas fa-user" aria-hidden="true"></i> Name
+                                  </label>
+                                  <input type="text" 
+                                         id="name" 
+                                         name="name"
+                                         class="form-control" 
+                                         required 
+                                         aria-required="true"
+                                         placeholder="Enter your name">
+                              </div>
+                              <div class="form-group">
+                                  <label for="email">
+                                      <i class="fas fa-envelope" aria-hidden="true"></i> Email
+                                  </label>
+                                  <input type="email" 
+                                         id="email" 
+                                         name="email"
+                                         class="form-control" 
+                                         required 
+                                         aria-required="true"
+                                         placeholder="Enter your email">
+                              </div>
+                              <div class="form-group">
+                                  <label for="message">
+                                      <i class="fas fa-comment-alt" aria-hidden="true"></i> Message
+                                  </label>
+                                  <textarea id="message" 
+                                            name="message"
+                                            class="form-control" 
+                                            rows="4" 
+                                            required 
+                                            aria-required="true"
+                                            placeholder="Enter your message"></textarea>
+                              </div>
+                              <button type="submit" class="btn btn-primary btn-block">
+                                  <i class="fas fa-paper-plane" aria-hidden="true"></i> Send Message
+                              </button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  
+      <!-- Scripts -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="script.js"></script>
+  </body>
+  </html>
