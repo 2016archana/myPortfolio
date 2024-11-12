@@ -99,7 +99,7 @@ portfolio-template/
 ## 🚀 Deployment
 1. Fork this repository
 2. Enable GitHub Pages in repository settings
-3. Your portfolio will be live at `https://username.github.io/portfolio-template`
+3. Your portfolio will be live at `https://2016archana.github.io/myPortfolio/`
 
 ## ⚡ Performance Features
 - Lazy loading images
