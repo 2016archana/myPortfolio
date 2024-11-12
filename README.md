@@ -127,4 +127,4 @@ This project is open source and available under the [MIT License](LICENSE.md).
 For support, please open an issue in the repository.
 
 ---
-Made with ❤️ by [Archana Patel]
+Made with ❤️ by Archana Patel
