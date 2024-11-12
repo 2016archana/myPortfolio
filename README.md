@@ -6,7 +6,7 @@ A clean, responsive portfolio template built with HTML, CSS, JavaScript, and Boo
 
 1. **Fork & Clone**
    ```bash
-   git clone https://github.com/your-username/portfolio-template.git
+   git clone https://github.com/2016archana/myPortfolio.git
    ```
 
 2. **Replace Personal Information**
